@@ -31,7 +31,7 @@ plt.scatter(X_train, Y_train, color="darkgreen", label="train data")  # 训练�
 plt.scatter(X_test, Y_test, color="red", label="test data")  # 测试集为红色点
 
 # 添加标签
-plt.legend(loc=1)  # 图标位于左上角，即第2象限，类似的，1为右上角，3为左下角，4为右下角
+plt.legend(loc=1)  # 图标位于右上角，即第2象限，类似的，1为右上角，3为左下角，4为右下角
 plt.xlabel("The Connection amount of the average account")  # 添加 X 轴名称
 plt.ylabel("The ratio of average return amount")  # 添加 Y 轴名称
 plt.show()  # 显示散点图
@@ -56,7 +56,7 @@ plt.scatter(X_train, Y_train, color='darkgreen', label="train data")
 plt.scatter(X_test, Y_test, color='red', label="test data")
 
 # 添加图标标签
-plt.legend(loc=1)  # 图标位于左上角，即第2象限，类似的，1为右上角，3为左下角，4为右下角
+plt.legend(loc=1)  # 图标位于右上角，即第2象限，类似的，1为右上角，3为左下角，4为右下角
 plt.xlabel("The Connection amount of the average account")  # 添加 X 轴名称
 plt.ylabel("The ratio of average return amount")  # 添加 Y 轴名称
 plt.show()  # 显示图像
