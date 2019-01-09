@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
 # 读取文件
-datafile = u'E:/python/data/dhdhdh.xlsx'  # 文件所在位置，u为防止路径中有中文名称，此处没有，可以省略
+datafile = u'E:/python/data/LinearRegression.xlsx'  # 文件所在位置，u为防止路径中有中文名称，此处没有，可以省略
 data = pd.read_excel(datafile)  # datafile是excel文件，所以用read_excel,如果是csv文件则用read_csv
 examDf = DataFrame(data)
 examDf = examDf.head(14)
