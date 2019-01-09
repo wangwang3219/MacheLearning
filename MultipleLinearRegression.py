@@ -23,7 +23,7 @@ print(new_examDf[new_examDf.isnull() == True].count())  # 检验缺失值，若�
 print(new_examDf.corr())  # 0-0.3弱相关；0.3-0.6中相关；0.6-1强相关；
 
 # 通过seaborn添加一条最佳拟合直线和95%的置信带，直观判断相关关系(aspect:图像长宽比例; kind:reg线性关系, scatter散点图)
-sns.pairplot(data, x_vars=['Call', 'Connect'], y_vars='Return', height=7, aspect=0.8, kind='scatter')
+sns.pairplot(data, x_vars=['Call', 'Connect'], y_vars='Return', height=7, aspect=0.8, kind='reg')
 plt.show()
 
 # 拆分训练集和测试集
