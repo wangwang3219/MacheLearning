@@ -1,5 +1,6 @@
 from math import log
 import operator
+import pickle
 
 """
 函数说明:计算给定数据集的经验熵(香农熵)
@@ -180,6 +181,16 @@ def classify(inputTree, featLabels, testVec):
                 classLabel = secondDict[key]
     return classLabel
 
+
+def storeTree(inputTree, filename):
+    with open(filename, 'wb') as fw:
+        pickle.dump(inputTree, fw)
+
+def grabTree(filename):
+    fr = open(filename, 'rb')
+    return pickle.load(fr)
+
+
 if __name__ == '__main__':
     dataSet, labels = createDataSet()
     featLabels = []
@@ -190,3 +201,6 @@ if __name__ == '__main__':
         print('放贷')
     if result == 'no':
         print('不放贷')
+    storeTree(myTree, 'classifierStorage.txt')
+    mree = grabTree('classifierStorage.txt')
+    print(mree)
